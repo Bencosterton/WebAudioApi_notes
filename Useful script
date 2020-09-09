@@ -1,0 +1,20 @@
+
+// Find out information about the audio peramiters of the web page
+new AudioContext()
+
+// OscillatorNode - generat a tone
+context.creatOscillator()
+
+// Gain
+context.createGain()
+
+// AudioBufferSuorceNode - in-memory audio data
+context.CreateBUffer()
+
+// BiquadFilterNode - low-pass filter
+context.CreateBiquadFilter()
+
+//AudiDestinationNode
+context.destination
+
+
