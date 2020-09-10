@@ -1,0 +1,23 @@
+// Load audio file into browser page. Audio file will have to be in same directory as index and main.
+
+const ctx = new AudioContext();
+let audio;
+
+fetch("./FILE PATH TO SOUND FILE")
+  .then(data = data.arrayBuffer())
+  .then(arrayBuffer = ctx.decodeAudioData(arrayBuffer))
+  .then(decodedAudio = {
+    audio = decodedAudio;
+  });
+  
+function playback() {
+  const playSound = ctx.createBufferSource();
+  playSound.buffer = audio;
+  playSound.connect(ctx.destination);
+  playSound.start(ctx.currentTime);
+}
+
+window.addEventListener("mousedown", playback);
+
+
+// line 17 - will 'playSound.start(0);' work? or 'playSound.start(ctx.0);'???
