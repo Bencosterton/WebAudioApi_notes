@@ -1,7 +1,7 @@
 const ctx = new AudioContext();
 let audio;
 
-fetch("./resources/cow_on_farm_Moo.mp3")
+fetch("PATH TO FILE")
   .then(data=>data.arrayBuffer())
   .then(arrayBuffer=>ctx.decodeAudioData(arrayBuffer))
   .then(decodedAudio=>{
